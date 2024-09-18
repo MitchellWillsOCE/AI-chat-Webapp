@@ -1,0 +1,134 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #00ffc3;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #eeeeee;
+}
+
+form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #444;
+    color: #ddd;
+}
+
+textarea {
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1.3em;
+    background-color: #444;
+    color: #ddd;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ffc3;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #00e6b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#chat {
+    width: 800px; /* Increased the width of chat box */
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#prompt {
+    width: 100%; /* Make the prompt box go the full width of the chat box */
+    height: 50px;
+    resize: vertical;
+}
+
+#response {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 8px;
+    min-height: 60px;
+    color: #ddf;
+}
+
+#chat-history {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+#chat-history div {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+#chat-history strong {
+    color: #00ffc3;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #444;
+    border-radius: 8px;
+    margin-top: 15px;
+    overflow: hidden;
+    display: none;
+}
+#progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #00ffc3;
+    transition: width 0.4s ease;
+}
